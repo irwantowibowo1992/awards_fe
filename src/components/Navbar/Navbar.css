@@ -1,0 +1,40 @@
+.navbar {
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer_item img {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.drawer_item span {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.drawer_item span:hover {
+  color: orange;
+  transition: 0.5s;
+}
+
+.drawer_tem_link {
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.navbar_item_title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Roboto';
+}

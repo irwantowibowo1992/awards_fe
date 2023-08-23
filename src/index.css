@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.MuiDrawer-paper {
+  width: 60% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+@media (min-width: 400px) {
+  .MuiDrawer-paper {
+    width: 40% !important;
+  }
+}
+
+@media (min-width: 720px) {
+  .MuiDrawer-paper {
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .MuiDrawer-paper {
+    width: 20% !important;
+  }
+}

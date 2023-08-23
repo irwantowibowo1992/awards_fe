@@ -1,0 +1,37 @@
+.home {
+  margin: 25px 25px;
+}
+
+.card_media {
+  position: relative;
+}
+
+.card_image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.home_tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+.home_point {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 10px 10px;
+  color: white;
+}
+
+.card_content {
+  font-size: 18px;
+  font-weight: 600;
+}
