@@ -82,7 +82,6 @@ function Filter() {
     e.preventDefault();
     combineFilter(checkType, range);
 
-    // navigate('/home', { state: filter, replace: true });
     navigate('/home', { state: filter, replace: true });
   };
 

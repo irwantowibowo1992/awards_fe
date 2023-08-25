@@ -20,14 +20,15 @@ const Home = () => {
   const fetchMoreData = async () => {
     try {
       const response = await axios.get(
-        `${url}/awards?page=${page}&limit=10`,
-        {
-          params: filter,
-        },
+        `${url}/awards?page=${page}&limit=10&pointFrom=${filter.pointFrom}&pointTo=${filter.pointTo}&category=${filter.category}`,
         {
           headers: {
+            'Content-type': 'application/json',
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
+        },
+        {
+          params: filter,
         }
       );
       const newData = response.data.data.results;
