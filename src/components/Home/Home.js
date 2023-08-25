@@ -16,7 +16,6 @@ const Home = () => {
   const [hasMore, setHasMore] = useState(true);
 
   const { filter, setFilter } = useFilter();
-  console.log('Harga diri nih bos ====>', filter);
 
   const fetchMoreData = async () => {
     try {
@@ -46,9 +45,8 @@ const Home = () => {
 
   useEffect(() => {
     fetchMoreData();
-  }, []);
+  }, [filter]);
 
-  console.log(items);
   if (hasMore) {
     console.log('Has more berjalan');
   } else {
@@ -74,15 +72,19 @@ const Home = () => {
       }
     >
       <div className="home">
-        <Grid container columnSpacing={2} rowSpacing={2}>
-          {items.map((item) => (
-            <Grid item md={6} lg={6}>
-              <Box>
-                <ListCard item={item} />
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
+        {items.length === 0 ? (
+          <h3>No Data Found...</h3>
+        ) : (
+          <Grid container columnSpacing={2} rowSpacing={2}>
+            {items.map((item) => (
+              <Grid item md={6} lg={6}>
+                <Box>
+                  <ListCard item={item} />
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        )}
       </div>
     </InfiniteScroll>
   );

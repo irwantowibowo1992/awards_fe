@@ -6,9 +6,9 @@ export function FilterProvider({ children }) {
   const [filter, setFilter] = useState({
     // page: 0,
     // count: 6,
-    pointFrom: '',
-    pointTo: '',
-    category: '',
+    pointFrom: '10000',
+    pointTo: '500000',
+    category: 'Product,Voucher,Other',
   });
 
   return (

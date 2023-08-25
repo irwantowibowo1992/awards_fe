@@ -1,0 +1,11 @@
+.card_image_header {
+  height: 170px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+
+.card_image {
+  object-fit: cover;
+  left: 0;
+}
